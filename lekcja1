@@ -1,0 +1,3 @@
+import random
+fakty = ["Lubię pływać", "Lubię jeździć na rowerze", " Jestem Szymon", "Lubię grać w piłkę", "Uwielbiam nurkować!", "Lubię grać na tel. i komputerze"] 
+print(random.choice(fakty))
