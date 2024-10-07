@@ -32,4 +32,17 @@ async def password(ctx,length=10):
 async def suma(ctx, a: int, b:int):
     await ctx.send(f'Suma {a} + {b} =  {a+b}')
 
+@bot.command()
+async def roz(ctx, a: int, b:int):
+    await ctx.send(f'Suma {a} - {b} =  {a-b}')
+
+@bot.command()
+async def mno(ctx, a: int, b:int):
+    await ctx.send(f'Suma {a} * {b} =  {a*b}')
+
+
+@bot.command()
+async def dziel(ctx, a: int, b:int):
+    await ctx.send(f'Suma {a} / {b} =  {a/b}')
+
 bot.run('xxxxx')
