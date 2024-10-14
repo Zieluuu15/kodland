@@ -93,6 +93,17 @@ async def thing(ctx):
 
 
 import requests
+def get_image_dog_url():
+    url = 'https://random.dog/woof.json'
+    res = requests.get(url)
+    data = res.json()
+    return data['url']
+
+@bot.command()
+async def dog(ctx):
+    image_url = get_image_dog_url()
+    await ctx.send(image_url)
+
 def get_image_duck_url():
     url = 'https://random-d.uk/api/random'
     res = requests.get(url)
@@ -104,4 +115,4 @@ async def duck(ctx):
     image_url = get_image_duck_url()
     await ctx.send(image_url)
 
-bot.run('xxxxx')
+bot.run('xxxxxxx')
